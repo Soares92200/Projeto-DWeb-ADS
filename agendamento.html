@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/img/logo-branca.png" type="image/x-icon">
+    <title>Consultório Online</title>
+</head>
+<body>
+    <header>
+        <img src="src/img/logo-branca.png" alt="logo do consultório">
+        <div id="sair">
+            Sair
+        </div>
+    </header>
+    <main class="main-principal">
+        <div class="principal">
+            <div class="agendamento">
+                <small> &larr; voltar</small>
+                
+                <h2>Agendamento: </h2>
+                <hr>
+                <form action="#" method="get">
+                    <div class="bloco-de-dados">
+                        <div class="label-input">
+                            <label for="Tipo_da_consulta">Tipo de consulta: </label>
+                            <select name="tipo_de_consulta" id="tipo_de_consulta" required>
+                                <option value=""></option>
+                                <option value="Geral">Geral</option>
+                                <option value="Cardiologia">Cardiologia</option>
+                                <option value="Psicologia">Psicologia</option>
+                            </select>
+
+                            <label for="Horario">Horário</label>
+                            <input type="time">
+                        </div>
+                        <div class="label-input">
+                            <label for="Data_da_consulta">Data da consulta: </label>
+                            <input type="date" name="data_da_consulta" required>
+
+                            <label for="Medico">Médico disponível: </label>
+                            <select name="medico" id="medico" required>
+                                <option value=""></option>
+                                <option value="Dra. Camila Silva">Dra. Camila Silva</option>
+                                <option value="Dr. Lucas Mendes">Dr. Lucas Mendes</option>
+                                <option value="Dra. Sofia Oliveira">Dra. Sofia Oliveira</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div class="motivo">
+                        <label for="Motivo">Motivo: </label>
+                        <textarea name="motivo" id="" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="continuar-cancelar">
+                        <a id="button-canc" href="principal.html">Cancelar</a>
+                        <input id="button-cont" type="submit" value="Continuar">
+                    </div>
+                </form>
+            </div>
+
+            <div class="table">
+                <div class="title">
+                    <h2>Lembre de não marcar consultas nos mesmos horários: </h2>
+                </div>
+                <hr>
+                <table>
+                    <tr>
+                        <th scope="col">Médico</th>
+                        <th scope="col">Tipo de Consulta</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Hora</th>
+                        
+                    </tr>
+                    <tr>
+                        <td>José I. C. da Silva</td>
+                        <td>Cardiologia</td>
+                        <td>18/02/2025</td>
+                        <td>16:00</td>
+                        
+                    </tr> 
+                    <tr>
+                        <td>José I. C. da Silva</td>
+                        <td>Cardiologia</td>
+                        <td>18/02/2024</td>
+                        <td>16:00</td>
+                        
+                    </tr> 
+                    <tr>
+                        <td>José I. C. da Silva</td>
+                        <td>Cardiologia</td>
+                        <td>18/02/2023</td>
+                        <td>16:00</td>
+                        
+                    </tr> 
+                </table>
+            </div>
+        </div>
+    </main>
+
+<script src="index.js"></script>    
+</body>
+</html>

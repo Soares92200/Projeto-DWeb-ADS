@@ -1,0 +1,275 @@
+@import url('reset.css');
+
+body {
+    background-color: #c8e3ff;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #0065D0;
+    align-items: center;
+}
+
+header img {
+    height: 52px;
+    margin: 10px;
+    margin-left: 16.6%;
+    cursor: pointer;
+}
+
+#sair, #sobre {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    user-select: none;
+    float: right;
+    position: absolute;
+    right: 16.6%;
+}
+
+.main-login {
+    background-image: url('../img/consulta.png');
+    height: 80vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.forms {
+    width: 60%;
+}
+
+.imagem {
+    display: none;
+}
+
+.forms form {
+    margin-top: 50px;
+}
+
+.forms form input {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 2px;
+    width: 100%;
+}
+
+.forms form input[type='submit'] {
+    display: flex;
+    margin: 5px;
+    width: 20%;
+    float: right;
+    border-radius: 20px;
+    background-color: #00995d;
+}
+
+/*  ------------  principal  ----------------   */
+
+.main-principal {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.principal {
+    margin: 10px;
+}
+
+.imagem-dados {
+    display: flex;
+}
+
+.imagem-usuario {
+    max-width: 40%;
+    object-fit:contain;
+}
+
+.bloco {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.bloco img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.bloco-de-dados input, .label-input select {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+hr{
+    background-color: #000;
+    width:100%;  
+    height: 1px;
+}
+
+.dados {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.bloco-de-dados, .bloco-de-dados .label-input {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.table .title {
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+}
+
+.table .title button {
+    position: absolute;
+    right: 0;
+    background-color: #00995d;
+    border-radius: 100px;
+    padding: 5px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.table table {
+    width: 100%;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table tr td button img {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.x-lapis {
+    display: flex;
+    justify-content: space-around;
+}
+
+.red-button {
+    background-color: #f00;
+}
+
+.yellow-button {
+    background-color: #ffb717;
+}
+
+/*  -------------- Agendamento ----------------  */
+
+.agendamento small {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.motivo {
+    display: block;
+}
+
+.motivo textarea {
+    width: 100%;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.continuar-cancelar {
+    position: relative;
+    float: right;
+}
+#button-canc {
+    background-color: #ffb717;
+    text-decoration: none;
+}
+
+#button-cont {
+    background-color: #1c7943;
+}
+
+#button-canc, #button-cont {
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    height: 30px;
+} 
+
+/*   -------------   Sobre    ------------------    */
+
+.principal-sobre {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.sobre {
+    width: 66.8%;
+}
+
+
+@media screen and (max-width: 501px){
+    .x-lapis {
+        display: grid;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 601px){
+    .main-login {
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .bloco-de-dados{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .label-input {
+        width: 45%;
+    }
+
+    .imagem-usuario {
+        max-width: 30%;
+    }
+    
+
+}
+
+@media screen and (min-width: 901px){
+    .forms {
+        width: 30%;
+    }
+
+    .main-login {
+        background-image: none;
+    }
+
+    .imagem {
+        display: flex;
+    }
+    
+    .imagem-usuario {
+        max-width: 20%;
+    }
+    
+}
