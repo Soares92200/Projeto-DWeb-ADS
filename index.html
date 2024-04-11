@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="src/img/logo-branca.png" alt="logo do consultório">
+        <img id="logo" src="src/img/logo-branca.png" alt="logo do consultório">
         <div id="sobre">
             Sobre
         </div>
@@ -16,17 +16,17 @@
     <main class="main-login">
         <div class="forms">
             
-            <form action="#" method="get">
+            <form action="principal.html" method="post">
                 <h2 class="roboto-black">Login:</h2>
                 <label for="Matricula_E-mail">Matrícula/E-mail: </label><br>
-                <input type="text" name="matricula_e-mail" placeholder="matrícula/e-mail" required><br>
+                <input type="text" id="matricula_e-mail" name="matricula_e-mail" placeholder="matrícula/e-mail" required><br>
                 <label for="Senha">Senha: </label><br>
                 <input type="password" name="senha" placeholder="senha" required><br>
-                <input type="submit" value="Entrar">
+                <input type="submit" id="entrar" value="Entrar">
             </form>
 
             
-            <form action="#" method="get">
+            <form action="principal.html" method="post">
                 <h2>Cadastro:</h2>
                 <label for="E-mail">E-mail: </label><br>
                 <input type="mail" name="email" placeholder="e-mail" required><br>
@@ -40,6 +40,8 @@
         
     </main>
 
-<script src="index.js"></script>    
+    <script src='src/js/jquery-3.4.1.min.js'></script>
+    <script src='src/js/sweetAlert.js'></script>
+    <script src="src/js/index.js"></script>
 </body>
 </html>

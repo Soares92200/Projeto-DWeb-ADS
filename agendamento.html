@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="src/img/logo-branca.png" alt="logo do consultório">
+        <img id="logo" src="src/img/logo-branca.png" alt="logo do consultório">
         <div id="sair">
             Sair
         </div>
@@ -16,11 +16,11 @@
     <main class="main-principal">
         <div class="principal">
             <div class="agendamento">
-                <small> &larr; voltar</small>
+                <small id="voltar"> &larr; voltar</small>
                 
                 <h2>Agendamento: </h2>
                 <hr>
-                <form action="#" method="get">
+                <form action="principal.html" method="post">
                     <div class="bloco-de-dados">
                         <div class="label-input">
                             <label for="Tipo_da_consulta">Tipo de consulta: </label>
@@ -32,7 +32,7 @@
                             </select>
 
                             <label for="Horario">Horário</label>
-                            <input type="time">
+                            <input type="time" name="horario" required>
                         </div>
                         <div class="label-input">
                             <label for="Data_da_consulta">Data da consulta: </label>
@@ -98,6 +98,8 @@
         </div>
     </main>
 
-<script src="index.js"></script>    
+    <script src='src/js/jquery-3.4.1.min.js'></script>
+    <script src='src/js/sweetAlert.js'></script>
+    <script src="src/js/index.js"></script>  
 </body>
 </html>

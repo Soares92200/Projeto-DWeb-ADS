@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="src/img/logo-branca.png" alt="logo do consultório">
+        <img id="logo" src="src/img/logo-branca.png" alt="logo do consultório">
         <div id="sair">
             Sair
         </div>
@@ -20,7 +20,7 @@
                 <div class="dados">
                     <div class="bloco">
                         <h2>Dados:</h2>
-                        <img src="src/img/lapis.png" alt="lápis de edição">
+                        <img id="lapis" src="src/img/lapis.png" alt="lápis de edição">
                     </div>
                     <hr>
                     <div class="bloco-de-dados">
@@ -51,7 +51,7 @@
             <div class="table">
                 <div class="title">
                     <h2>Consultas: </h2>
-                    <button>Nova</button>
+                    <button id="nova_consulta">Nova</button>
                 </div>
                 <hr>
                 <table>
@@ -97,6 +97,8 @@
         </div>
     </main>
 
-<script src="index.js"></script>    
+    <script src='src/js/jquery-3.4.1.min.js'></script>
+    <script src='src/js/sweetAlert.js'></script>
+    <script src="src/js/index.js"></script>    
 </body>
 </html>
